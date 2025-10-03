@@ -1,0 +1,164 @@
+site:
+  name: 東ティモール観光ガイド
+  purpose: もっと東ティモールを日本の人に知ってもらい、観光してもらう
+  author:
+    name: 竹内 音碧
+    role: Founder & App Developer
+    university: 早稲田大学 人間科学部 人間情報学科
+    experience: "個人開発で7つのiOSアプリをリリース"
+    profile_url: "https://oto0928.github.io/Homepage/profile.html"
+
+sections:
+  - name: トップページ
+    content:
+      header:
+        site_name: 東ティモール観光ガイド
+        navigation: ["観光名所", "歴史", "著者について", "言語ガイド", "旅行情報"]
+      main_visual: "東ティモールの美しい風景や観光地の画像"
+      introduction: "東ティモールの魅力を伝える簡単な紹介文"
+
+  - name: 東ティモールとは
+    content:
+      basic_info:
+        location: "東ティモールの位置（地図付き）"
+        area: "面積"
+        population: "人口"
+        capital: "ディリ"
+      language: 
+        official_languages: ["テトゥン語", "ポルトガル語"]
+        spoken_languages: ["インドネシア語", "英語"]
+      coffee:
+        description: "東ティモール産コーヒーの特色"
+        global_recognition: "世界的に評価される理由"
+      tourism_season:
+        best_season: "観光のベストシーズン"
+        climate_info: "気候情報"
+      
+  - name: 観光名所
+    content:
+      - name: クリストレイ
+        rating: ★★★★★
+        description: "必見スポット。美しい景色と巨大なキリスト像"
+        activities: ["登山", "景色の撮影"]
+        access: "交通手段や距離"
+        nearby_info: "カフェや休憩スポット"
+        
+      - name: Chega博物館
+        rating: ★★★★☆
+        description: "東ティモールの歴史や占領時代について学べる博物館"
+        highlights: "写真や展示物、ビデオ"
+        best_time: "午後の静かな時間帯"
+        
+      - name: 海
+        rating: ★★★★★
+        description: "透き通った海水と自然の岩礁エリアでのスイミング"
+        activities: ["ダイビング", "シュノーケリング"]
+        
+      - name: ティモールプラザ
+        rating: ★★★★☆
+        description: "地元の市場とショッピングセンターでの物価調査"
+        access: "都市中心部からのアクセス方法"
+        
+      - name: タイスマーケット
+        rating: ★★★☆☆
+        description: "東ティモールの伝統的な編み物や手作りお土産が楽しめる"
+        note: "価格交渉が必要"
+        
+      - name: 東ティモール抵抗運動博物館
+        rating: ★★☆☆☆
+        description: "ここ行くならChega博物館へ行こう"
+
+      - name: サンタクルス墓地
+        rating: ★★★☆☆
+        description: "Chega博物館行った後に行くと感慨深い"
+        
+      - name: フルーツマーケット
+        rating: ★★★☆☆
+        description: "外国人だと吹っ掛けられるが、見るのは楽しい"
+        
+  - name: 歴史
+    content:
+      - title: 東ティモールの歴史
+        events:
+          - "ポルトガル植民地時代"
+          - "インドネシア占領"
+          - "独立運動"
+      - title: 重要な出来事
+        events:
+          - "1975年の独立宣言"
+          - "1999年の国連管理下での独立"
+      - title: 文化遺産
+        items: "世界遺産に登録された場所や文化的背景"
+
+  - name: 簡単なテトゥン語の紹介
+    content:
+      greetings:
+        - "ボンディア: おはよう"
+        - "オブリガード: ありがとう"
+      useful_phrases:
+        - "ホテルはどこですか？"
+        - "道に迷いました"
+      pronunciation_guide:
+        description: "日本人向けに簡単な発音マニュアル"
+      
+  - name: 著者の東ティモール留学経験談
+    content:
+      introduction: "留学中の体験や学んだこと"
+      diary:
+        - day: "1日目"
+          schedule:
+            - "成田空港集合"
+            - "インドネシアでトランジット"
+            - "誕生日を祝う"
+        - day: "2日目"
+          schedule:
+            - "デンパサールから東ティモールへ移動"
+            - "ティモールプラザ、クリストレイ訪問"
+        - day: "3日目"
+          schedule:
+            - "フリースクールで授業"
+            - "Chega博物館見学"
+        - day: "4日目"
+          schedule:
+            - "フリースクールで授業"
+            - "ピースウィンズ・ジャパン講演"
+        - day: "5日目"
+          schedule:
+            - "フリースクールで授業"
+            - "JICA講演"
+        - day: "6日目" 
+          schedule: "SHARE活動"
+        - day: "12日目"
+          schedule: "成田空港着"
+
+  - name: 旅行費用や注意事項
+    content:
+      travel_costs:
+        flight: "航空券の目安"
+        accommodation: "宿泊費"
+        daily_expenses: "現地での食費・交通費"
+      safety_tips:
+        - "治安情報"
+        - "旅行中に気を付けるべきこと"
+      transportation:
+        - "バス"
+        - "タクシー"
+        - "レンタカー"
+        - "徒歩"
+      visa_info: "ビザ情報"
+        
+  - name: お問い合わせ
+    content:
+      contact_form: "質問やコメントを送るフォーム"
+      social_media_links:
+        twitter: "Twitterリンク"
+        instagram: "Instagramリンク"
+      
+  - name: フッター
+    content:
+      copyright: "著作権表示"
+      related_links:
+        tourism_board: "東ティモール観光局"
+        other_links:
+          - "リンク1"
+          - "リンク2"
