@@ -52,8 +52,113 @@
     <section class="language-intro">
         <div class="container">
             <div class="intro-content">
-                <h2>テトゥン語について</h2>
-                <p>テトゥン語は東ティモールの公用語の一つで、ポルトガル語とインドネシア語の影響を受けたクレオール言語です。現地の人々との交流を深めるために、基本的なフレーズを覚えておくと便利です。</p>
+                <div class="intro-header">
+                    <div class="intro-icon">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h2>テトゥン語について</h2>
+                </div>
+                <div class="intro-text">
+                    <p class="lead-text">テトゥン語は東ティモールの公用語の一つで、ポルトガル語とインドネシア語の影響を受けたクレオール言語です。現地の人々との交流を深めるために、基本的なフレーズを覚えておくと便利です。</p>
+                    
+                    <div class="language-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1.3M</div>
+                            <div class="stat-label">話者数</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">方言</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1912</div>
+                            <div class="stat-label">記録開始年</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">言語源流</div>
+                        </div>
+                    </div>
+
+                    <div class="language-features">
+                        <div class="feature-content">
+                            <h3>テトゥン語の特徴</h3>
+                            <div class="feature-grid">
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-language"></i>
+                                    </div>
+                                    <h4>混合言語</h4>
+                                    <p>ポルトガル語、インドネシア語、テトゥン語の混合で、ユニークな表現力を持っています</p>
+                                </div>
+                                <div class="feature-card">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <h4>感情表現</h4>
+                                    <p>豊かな感情表現で、東ティモール人の温かい人柄が表現されています</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 方言と文化 -->
+    <section class="dialects-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h2 class="section-title">方言と地域文化</h2>
+                <p class="section-subtitle">地域ごとに異なるテトゥン語の魅力</p>
+            </div>
+            
+            <div class="dialects-grid">
+                <div class="dialect-card">
+                    <div class="dialect-header">
+                        <div class="dialect-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h3>ディリ方言</h3>
+                        <span class="dialect-status">標準方言</span>
+                    </div>
+                    <div class="dialect-content">
+                        <p class="dialect-description">首都ディリ周辺で話される標準的なテトゥン語。ポルトガル語の影響が強く、教育やメディアで使用されます。</p>
+                        <div class="dialect-features">
+                            <span class="feature-tag">ポルトガル語単語多し</span>
+                            <span class="feature-tag">フォーマルな表現</span>
+                            <span class="feature-tag">都市部で普及</span>
+                        </div>
+                        <div class="dialect-example">
+                            <strong>例：</strong>「Obrigadu barak」（大変ありがとう）
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dialect-card">
+                    <div class="dialect-header">
+                        <div class="dialect-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3>農村方言</h3>
+                        <span class="dialect-status">伝統方言</span>
+                    </div>
+                    <div class="dialect-content">
+                        <p class="dialect-description">山間部や農村地域で話される伝統的なテトゥン語。先住民言語の要素が多く残されています。</p>
+                        <div class="dialect-features">
+                            <span class="feature-tag">先住民語彙多し</span>
+                            <span class="feature-tag">家族的な表現</span>
+                            <span class="feature-tag">農村部で使用</span>
+                        </div>
+                        <div class="dialect-example">
+                            <strong>例：</strong>「Diak hau nia saude」（こんにちは）
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -66,41 +171,166 @@
                 <p class="section-subtitle">日常でよく使われる挨拶</p>
             </div>
             <div class="greetings-grid">
-                <div class="greeting-card">
+                <div class="greeting-card" data-category="greeting">
+                    <div class="card-header">
+                        <div class="phrase-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <button class="favorite-btn" onclick="toggleFavorite(this)" title="お気に入りに追加">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
                     <div class="phrase-japanese">おはよう</div>
                     <div class="phrase-tetun">ボンディア</div>
                     <div class="phrase-romaji">Bondia</div>
                     <div class="phrase-note">朝の挨拶</div>
+                    <button class="audio-btn" onclick="playAudio('bondia')" title="音声を再生">
+                        <i class="fas fa-play"></i>音声
+                    </button>
                 </div>
-                <div class="greeting-card">
+                
+                <div class="greeting-card" data-category="greeting">
+                    <div class="card-header">
+                        <div class="phrase-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <button class="favorite-btn" onclick="toggleFavorite(this)" title="お気に入りに追加">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
                     <div class="phrase-japanese">こんにちは</div>
                     <div class="phrase-tetun">ボアタルデ</div>
                     <div class="phrase-romaji">Boatarde</div>
                     <div class="phrase-note">昼の挨拶</div>
+                    <button class="audio-btn" onclick="playAudio('boatarde')" title="音声を再生">
+                        <i class="fas fa-play"></i>音声
+                    </button>
                 </div>
-                <div class="greeting-card">
+                
+                <div class="greeting-card" data-category="greeting">
+                    <div class="card-header">
+                        <div class="phrase-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <button class="favorite-btn" onclick="toggleFavorite(this)" title="お気に入りに追加">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
                     <div class="phrase-japanese">こんばんは</div>
                     <div class="phrase-tetun">ボアノイテ</div>
                     <div class="phrase-romaji">Boa noite</div>
                     <div class="phrase-note">夜の挨拶</div>
+                    <button class="audio-btn" onclick="playAudio('boa-noite')" title="音声を再生">
+                        <i class="fas fa-play"></i>音声
+                    </button>
                 </div>
-                <div class="greeting-card">
+                
+                <div class="greeting-card" data-category="greeting">
+                    <div class="card-header">
+                        <div class="phrase-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <button class="favorite-btn" onclick="toggleFavorite(this)" title="お気に入りに追加">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
                     <div class="phrase-japanese">ありがとう</div>
                     <div class="phrase-tetun">オブリガード</div>
                     <div class="phrase-romaji">Obrigadu</div>
                     <div class="phrase-note">感謝の表現</div>
+                    <button class="audio-btn" onclick="playAudio('obrigadu')" title="音声を再生">
+                        <i class="fas fa-play"></i>音声
+                    </button>
                 </div>
-                <div class="greeting-card">
+                
+                <div class="greeting-card" data-category="greeting">
+                    <div class="card-header">
+                        <div class="phrase-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <button class="favorite-btn" onclick="toggleFavorite(this)" title="お気に入りに追加">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
                     <div class="phrase-japanese">すみません</div>
                     <div class="phrase-tetun">デスクルパ</div>
                     <div class="phrase-romaji">Desculpa</div>
                     <div class="phrase-note">謝罪・失礼</div>
+                    <button class="audio-btn" onclick="playAudio('desculpa')" title="音声を再生">
+                        <i class="fas fa-play"></i>音声
+                    </button>
                 </div>
-                <div class="greeting-card">
+                
+                <div class="greeting-card" data-category="greeting">
+                    <div class="card-header">
+                        <div class="phrase-icon">
+                            <i class="fas fa-hand-waving"></i>
+                        </div>
+                        <button class="favorite-btn" onclick="toggleFavorite(this)" title="お気に入りに追加">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
                     <div class="phrase-japanese">さようなら</div>
                     <div class="phrase-tetun">アテロゴ</div>
                     <div class="phrase-romaji">Ate logo</div>
                     <div class="phrase-note">別れの挨拶</div>
+                    <button class="audio-btn" onclick="playAudio('ate-logo')" title="音声を再生">
+                        <i class="fas fa-play"></i>音声
+                    </button>
+                </div>
+
+                <div class="greeting-card" data-category="greeting">
+                    <div class="card-header">
+                        <div class="phrase-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <button class="favorite-btn" onclick="toggleFavorite(this)" title="お気に入りに追加">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="phrase-japanese">はじめまして</div>
+                    <div class="phrase-tetun">プラゼル・エンヂンテ</div>
+                    <div class="phrase-romaji">Prazer em konhese</div>
+                    <div class="phrase-note">初対面の挨拶</div>
+                    <button class="audio-btn" onclick="playAudio('prazer')" title="音声を再生">
+                        <i class="fas fa-play"></i>音声
+                    </button>
+                </div>
+
+                <div class="greeting-card" data-category="greeting">
+                    <div class="card-header">
+                        <div class="phrase-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <button class="favorite-btn" onclick="toggleFavorite(this)" title="お気に入りに追加">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="phrase-japanese">元気ですか？</div>
+                    <div class="phrase-tetun">ディアク・ボターン？</div>
+                    <div class="phrase-romaji">Diak bootan?</div>
+                    <div class="phrase-note">健康を気遣う挨拶</div>
+                    <button class="audio-btn" onclick="playAudio('diak-bootan')" title="音声を再生">
+                        <i class="fas fa-play"></i>音声
+                    </button>
+                </div>
+
+                <div class="greeting-card" data-category="greeting">
+                    <div class="card-header">
+                        <div class="phrase-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <button class="favorite-btn" onclick="toggleFavorite(this)" title="お気に入りに追加">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="phrase-japanese">元気です</div>
+                    <div class="phrase-tetun">ハウ・ディアク</div>
+                    <div class="phrase-romaji">Hau diak</div>
+                    <div class="phrase-note">元気な返事</div>
+                    <button class="audio-btn" onclick="playAudio('hau-diak')" title="音声を再生">
+                        <i class="fas fa-play"></i>音声
+                    </button>
                 </div>
             </div>
         </div>
@@ -174,6 +404,213 @@
         </div>
     </section>
 
+    <!-- テトゥン語クイズ -->
+    <section class="quiz-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h2 class="section-title">テトゥン語クイズ</h2>
+                <p class="section-subtitle">学習したフレーズをクイズで練習しよう</p>
+            </div>
+            
+            <div class="quiz-container">
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="quizProgress"></div>
+                    </div>
+                    <span class="progress-text" id="quizProgressText">1 / 10</span>
+                </div>
+                
+                <div class="quiz-card" id="quizCard">
+                    <div class="quiz-question">
+                        <h3 id="questionText">この日本語「おはよう」のテトゥン語は？</h3>
+                    </div>
+                    
+                    <div class="quiz-options">
+                        <button class="quiz-option" onclick="selectAnswer(this)" data-answer="A">
+                            <span class="option-label">A</span>
+                            <span class="option-text" id="optionA">ボンディア</span>
+                        </button>
+                        <button class="quiz-option" onclick="selectAnswer(this)" data-answer="B">
+                            <span class="option-label">B</span>
+                            <span class="option-text" id="optionB">ボアタルデ</span>
+                        </button>
+                        <button class="quiz-option" onclick="selectAnswer(this)" data-answer="C">
+                            <span class="option-label">C</span>
+                            <span class="option-text" id="optionC">ボアノイテ</span>
+                        </button>
+                        <button class="quiz-option" onclick="selectAnswer(this)" data-answer="D">
+                            <span class="option-label">D</span>
+                            <span class="option-text" id="optionD">オブリガード</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="quiz-results" id="quizResults" style="display: none;">
+                    <div class="results-content">
+                        <h3>クイズ結果</h3>
+                        <div class="score-display">
+                            <span class="score-text">正解率: </span>
+                            <span class="score-num" id="scoreNum">0%</span>
+                        </div>
+                        <p class="results-message" id="resultsMessage">素晴らしいです！</p>
+                        <button class="retry-btn" onclick="restartQuiz()">
+                            <i class="fas fa-redo"></i>もう一度挑戦
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文化的な使い方 -->
+    <section class="cultural-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h2 class="section-title">文化的な使い方</h2>
+                <p class="section-subtitle">テトゥン語に込められた東ティモールの文化</p>
+            </div>
+            
+            <div class="cultural-grid">
+                <div class="cultural-card">
+                    <div class="cultural-image">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>握手と挨拶</h3>
+                    <p class="cultural-description">東ティモールでは挨拶時に握手が基本。目を見て笑顔で話しかけることを大切にします。</p>
+                    <div class="cultural-phrase">
+                        <strong>文化ポイント:</strong>「Bondia」と言いながら、温かく握手をすることが重要です。
+                    </div>
+                </div>
+                
+                <div class="cultural-card">
+                    <div class="cultural-image">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>感謝と敬意</h3>
+                    <p class="cultural-description">礼儀を重んじる文化で、「Obrigadu barak」でより丁寧な感謝を表現します。</p>
+                    <div class="cultural-phrase">
+                        <strong>文化ポイント:</strong>「barak」は「とても」の意味で、心からの感謝を表現。
+                    </div>
+                </div>
+                
+                <div class="cultural-card">
+                    <div class="cultural-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>家族の概念</h3>
+                    <p class="cultural-description">家族やコミュニティを最優先にする文化です。年上の人には特に敬意を表します。</p>
+                    <div class="cultural-phrase">
+                        <strong>文化ポイント:</strong>お年寄りには「Senhor/Senhora」をつけて敬語を使いましょう。
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- 数字と基本表現 -->
+    <section class="numbers-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <h2 class="section-title">数字と基本表現</h2>
+                <p class="section-subtitle">日常で使う数字の言い方</p>
+            </div>
+            
+            <div class="numbers-grid">
+                <div class="number-category">
+                    <h3>基本の数字（1-10）</h3>
+                    <div class="numbers-list">
+                        <div class="number-item">
+                            <span class="number">1</span>
+                            <span class="tetun-number">イダ</span>
+                            <span class="romaji">Ida</span>
+                        </div>
+                        <div class="number-item">
+                            <span class="number">2</span>
+                            <span class="tetun-number">ルア</span>
+                            <span class="romaji">Rua</span>
+                        </div>
+                        <div class="number-item">
+                            <span class="number">3</span>
+                            <span class="tetun-number">トル</span>
+                            <span class="romaji">Tol</span>
+                        </div>
+                        <div class="-number">
+                            <span class="number">4</span>
+                            <span class="tetun-number">ハット</span>
+                            <span class="romaji">Haak</span>
+                        </div>
+                        <div class="number-item">
+                            <span class="number">5</span>
+                            <span class="tetun-number">リマ</span>
+                            <span class="romaji">Lima</span>
+                        </div>
+                        <div class="number-item">
+                            <span class="number">6</span>
+                            <span class="tetun-number">ネネ</span>
+                            <span class="romaji">Nen</span>
+                        </div>
+                        <div class="number-item">
+                            <span class="number">7</span>
+                            <span class="tetun-number">ヒトゥ</span>
+                            <span class="romaji">Hitu</span>
+                        </div>
+                        <div class="number-item">
+                            <span class="number">8</span>
+                            <span class="tetun-number">ウアヌ</span>
+                            <span class="romaji">Ualu</span>
+                        </div>
+                        <div class="number-item">
+                            <span class="number">9</span>
+                            <span class="tetun-number">シア</span>
+                            <span class="romaji">Sia</span>
+                        </div>
+                        <div class="number-item">
+                            <span class="number">10</span>
+                            <span class="tetun-number">サヌル</span>
+                            <span class="romaji">Sanulus</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="number-category">
+                    <h3>よく使う表現</h3>
+                    <div class="expressions-list">
+                        <div class="expression-item">
+                            <div class="expression-japanese">何時ですか？</div>
+                            <div class="expression-tetun">オラン・ネベ？</div>
+                            <div class="expression-romaji">Ora nebe?</div>
+                        </div>
+                        <div class="expression-item">
+                            <div class="expression-japanese">今日は何日ですか？</div>
+                            <div class="expression-tetun">オル・ロラン・ネベ？</div>
+                            <div class="expression-romaji">Or loran nebe?</div>
+                        </div>
+                        <div class="expression-item">
+                            <div class="expression-japanese">いつですか？</div>
+                            <div class="expression-tetun">ベンセ？</div>
+                            <div class="expression-romaji">Wense?</div>
+                        </div>
+                        <div class="expression-item">
+                            <div class="expression-japanese">どこですか？</div>
+                            <div class="expression-tetun">ネベ・イハ？</div>
+                            <div class="expression-romaji">Nebe iha?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 発音ガイド -->
     <section class="pronunciation-section">
         <div class="container">
@@ -208,6 +645,57 @@
                         <div class="example-tetun">Hau lare</div>
                         <div class="example-pronunciation">ハウ・ラレ</div>
                         <div class="example-meaning">道に迷いました</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- テトゥン語の歴史 -->
+    <section class="language-history">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-history"></i>
+                </div>
+                <h2 class="section-title">テトゥン語の歴史</h2>
+                <p class="section-subtitle">複雑な植民地時代から生まれた言語の軌跡</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">1512年</div>
+                        <h3>ポルトガル植民地化開始</h3>
+                        <p>ポルトガル人がティモール島に到来し、カトリック布教とともにポルトガル語が持ち込まれました。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">1912年</div>
+                        <h3>テトゥン語最初の記録</h3>
+                        <p>ポルトガルの宣教師ペドロ・ゼリーノによる最初のテトゥン語記録が作成されました。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">1975年</div>
+                        <h3>インドネシア侵攻</h3>
+                        <p>インドネシア語の影響が強まり、テトゥン語はさらなる発展を遂げました。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2002年</div>
+                        <h3>独立・公用語制定</h3>
+                        <p>東ティモール独立に伴い、テトゥン語が正式に公用語として制定されました。</p>
                     </div>
                 </div>
             </div>
@@ -255,5 +743,249 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <!-- テトゥン語ページ専用のJavaScript -->
+    <script>
+        // お気に入り機能
+        let favorites = JSON.parse(localStorage.getItem('tetunFavorites') || '[]');
+        
+        function toggleFavorite(btn) {
+            const card = btn.closest('.greeting-card');
+            const phrase = card.querySelector('.phrase-japanese').textContent;
+            
+            const favIndex = favorites.indexOf(phrase);
+            if (favIndex > -1) {
+                favorites.splice(favIndex, 1);
+                btn.querySelector('i').classList.remove('fas');
+                btn.querySelector('i').classList.add('far');
+            } else {
+                favorites.push(phrase);
+                btn.querySelector('i').classList.remove('far');
+                btn.querySelector('i').classList.add('fas');
+            }
+            
+            localStorage.setItem('tetunFavorites', JSON.stringify(favorites));
+        }
+        
+        // 音声再生機能（シミュレート）
+        function playAudio(text) {
+            const btn = event.target.closest('.audio-btn, .audio-btn-small');
+            const icon = btn.querySelector('i');
+            
+            icon.classList.remove('fa-play');
+            icon.classList.add('fa-volume-up');
+            btn.style.pointerEvents = 'none';
+            
+            // 音声再生のシミュレート
+            setTimeout(() => {
+                icon.classList.remove('fa-volume-up');
+                icon.classList.add('fa-play');
+                btn.style.pointerEvents = 'auto';
+            }, 1500);
+        }
+        
+        // カテゴリーフィルター
+        function filterCategories(category) {
+            const categories = document.querySelectorAll('.phrase-category');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            
+            filterBtns.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            categories.forEach(cat => {
+                if (category === 'all' || cat.dataset.category === category) {
+                    cat.style.display = 'block';
+                    cat.style.opacity = '0';
+                    setTimeout(() => {
+                        cat.style.opacity = '1';
+                    }, 100);
+                } else {
+                    cat.style.opacity = '0';
+                    setTimeout(() => {
+                        cat.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+        
+        // イベントリスナー追加
+        window.addEventListener('load', function() {
+            // フィルターボタンのイベント
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const category = btn.dataset.category;
+                    filterCategories(category);
+                });
+            });
+            
+            // お気に入り状態の復元
+            document.querySelectorAll('.greeting-card').forEach(card => {
+                const phrase = card.querySelector('.phrase-japanese').textContent;
+                const favBtn = card.querySelector('.favorite-btn');
+                
+                if (favorites.includes(phrase)) {
+                    favBtn.querySelector('i').classList.remove('far');
+                    favBtn.querySelector('i').classList.add('fas');
+                }
+            });
+        });
+        
+        // クイズ機能
+        const quizData = [
+            {
+                question: "この日本語「おはよう」のテトゥン語は？",
+                options: ["ボンディア", "ボアタルデ", "ボアノイテ", "オブリガード"],
+                correct: 0
+            },
+            {
+                question: "「ありがとう」のテトゥン語は？",
+                options: ["デスクルパ", "オブリガード", "ボンディア", "アテロゴ"],
+                correct: 1
+            },
+            {
+                question: "「病院はどこですか？」のテトゥン語は？",
+                options: ["ホテル・ネベ・イハ？", "オスピタル・ネベ・イハ？", "カサ・マンド・ネベ・イハ？", "ポリシア・ネベ・イハ？"],
+                correct: 1
+            },
+            {
+                question: "数字の「1」をテトゥン語で？",
+                options: ["ルア", "イダ", "トル", "ハット"],
+                correct: 1
+            },
+            {
+                question: "「はい」をテトゥン語で？",
+                options: ["シニ", "ラエ", "オンテ", "カリュス"],
+                correct: 0
+            }
+        ];
+        
+        let currentQuiz = 0;
+        let quizScore = 0;
+        
+        function startQuiz() {
+            showQuizQuestion();
+        }
+        
+        function showQuizQuestion() {
+            const quiz = quizData[currentQuiz];
+            const questionText = document.getElementById('questionText');
+            const options = ['optionA', 'optionB', 'optionC', 'optionD'];
+            
+            questionText.textContent = quiz.question;
+            options.forEach((id, index) => {
+                document.getElementById(id).textContent = quiz.options[index];
+            });
+            
+            updateQuizProgress();
+        }
+        
+        function selectAnswer(btn) {
+            const selectedAnswer = btn.dataset.answer;
+            const quiz = quizData[currentQuiz];
+            const options = ['A', 'B', 'C', 'D'];
+            const correctAnswer = options[quiz.correct];
+            
+            // 正解ボタンをハイライト
+            document.querySelectorAll('.quiz-option').forEach(option => {
+                option.disabled = true;
+                if (option.dataset.answer === correctAnswer) {
+                    option.style.backgroundColor = '#28a745';
+                    option.style.color = 'white';
+                }
+            });
+            
+            // 選択したボタンのスタイル
+            if (selectedAnswer === correctAnswer) {
+                btn.style.backgroundColor = '#28a745';
+                btn.style.color = 'white';
+                quizScore++;
+            } else {
+                btn.style.backgroundColor = '#dc3545';
+                btn.style.color = 'white';
+            }
+            
+            // 次の問題または結果表示
+            setTimeout(() => {
+                currentQuiz++;
+                if (currentQuiz < quizData.length) {
+                    showQuizQuestion();
+                    resetQuizOptions();
+                } else {
+                    showQuizResults();
+                }
+            }, 2000);
+        }
+        
+        function updateQuizProgress() {
+            const progress = ((currentQuiz + 1) / quizData.length) * 100;
+            document.getElementById('quizProgress').style.width = progress + '%';
+            document.getElementById('quizProgressText').textContent = `${currentQuiz + 1} / ${quizData.length}`;
+        }
+        
+        function resetQuizOptions() {
+            document.querySelectorAll('.quiz-option').forEach(option => {
+                option.disabled = false;
+                option.style.backgroundColor = '';
+                option.style.color = '';
+            });
+        }
+        
+        function showQuizResults() {
+            document.getElementById('quizCard').style.display = 'none';
+            document.getElementById('quizResults').style.display = 'block';
+            
+            const score = (quizScore / quizData.length) * 100;
+            document.getElementById('scoreNum').textContent = Math.round(score) + '%';
+            
+            let message = '';
+            if (score >= 80) {
+                message = '素晴らしいテトゥン語の知識です！';
+            } else if (score >= 60) {
+                message = 'よくできました！もう少し練習を続けましょう。';
+            } else {
+                message = '基礎を復習して、もう一度チャレンジしましょう！';
+            }
+            document.getElementById('resultsMessage').textContent = message;
+        }
+        
+        function restartQuiz() {
+            currentQuiz = 0;
+            quizScore = 0;
+            document.getElementById('quizCard').style.display = 'block';
+            document.getElementById('quizResults').style.display = 'none';
+            showQuizQuestion();
+            resetQuizOptions();
+        }
+        
+        // クイズ開始
+        window.addEventListener('load', startQuiz);
+        
+        // アニメーション
+        document.addEventListener('DOMContentLoaded', function() {
+            // フェードイン アニメーション
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // 観察対象を追加
+            document.querySelectorAll('.greeting-card, .phrase-category, .cultural-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s, transform 0.6s';
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 </html>
